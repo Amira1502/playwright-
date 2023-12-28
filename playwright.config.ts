@@ -1,7 +1,7 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["e2e/basic.interaction.spec.ts"],
+    // testMatch: ["e2e/dropdown.spec.ts"],
     use: {
         headless:false,
         screenshot:'only-on-failure',

@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/nasri/OneDrive/Bureau/playwright",
+    "configFile": "c:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/nasri/OneDrive/Bureau/playwright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,15 +39,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/nasri/OneDrive/Bureau/playwright/test-results",
+        "outputDir": "c:/Users/nasri/OneDrive/Bureau/playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/nasri/OneDrive/Bureau/playwright",
+        "testDir": "c:/Users/nasri/OneDrive/Bureau/playwright",
         "testIgnore": [],
         "testMatch": [
-          "e2e/basic.interaction.spec.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "e2e\\basic.interaction.spec.ts",
-      "file": "e2e/basic.interaction.spec.ts",
+      "title": "e2e\\dropdown.spec.ts",
+      "file": "e2e/dropdown.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "form",
+          "title": "bootstrap dropdown",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,146 +80,39 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10702,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "Before entering data \u001b[33m0\u001b[39m\n"
-                    },
-                    {
-                      "text": "after waiting data \u001b[33mNaN\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-12-28T09:19:17.683Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "aa8a0a74c17d55de4bf7-147b6726b1530bfd76f7",
-          "file": "e2e/basic.interaction.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "sum",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 14906,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#addmessage')\nExpected string: \u001b[32m\"243\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#addmessage')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#addmessage')\nExpected string: \u001b[32m\"243\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#addmessage')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\e2e\\basic.interaction.spec.ts:28:20",
-                    "location": {
-                      "file": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\e2e\\basic.interaction.spec.ts",
-                      "column": 20,
-                      "line": 28
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m result\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mlet\u001b[39m expectedRes \u001b[33m=\u001b[39m num1 \u001b[33m+\u001b[39m num2\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     expect(result)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"\"\u001b[39m \u001b[33m+\u001b[39m expectedRes)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m test(\u001b[32m\"checkbox\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\e2e\\basic.interaction.spec.ts",
-                        "column": 20,
-                        "line": 28
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#addmessage')\nExpected string: \u001b[32m\"243\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#addmessage')\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <p class=\"mt-20\" id=\"addmessage\"></p>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m result\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m     \u001b[36mlet\u001b[39m expectedRes \u001b[33m=\u001b[39m num1 \u001b[33m+\u001b[39m num2\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     expect(result)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"\"\u001b[39m \u001b[33m+\u001b[39m expectedRes)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m test(\u001b[32m\"checkbox\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[0m\n\n\u001b[2m    at C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\e2e\\basic.interaction.spec.ts:28:20\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-12-28T09:19:28.860Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\test-results\\e2e-basic.interaction-sum\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\test-results\\e2e-basic.interaction-sum\\test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\e2e\\basic.interaction.spec.ts",
-                    "column": 20,
-                    "line": 28
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "aa8a0a74c17d55de4bf7-2a95a2db2436f4bf06e4",
-          "file": "e2e/basic.interaction.spec.ts",
-          "line": 14,
-          "column": 5
-        },
-        {
-          "title": "checkbox",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 7925,
+                  "duration": 9717,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-12-28T09:19:45.643Z",
-                  "attachments": []
+                  "startTime": "2023-12-28T15:14:03.653Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "c:\\Users\\nasri\\OneDrive\\Bureau\\playwright\\test-results\\e2e-dropdown-bootstrap-dropdown\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "aa8a0a74c17d55de4bf7-83adc5915a70ce327b88",
-          "file": "e2e/basic.interaction.spec.ts",
-          "line": 31,
-          "column": 5
+          "id": "63cb85f3cf1c7b6c2080-0cc83abf0b8b586ed07a",
+          "file": "e2e/dropdown.spec.ts",
+          "line": 22,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-28T09:19:17.008Z",
-    "duration": 37196.113,
-    "expected": 2,
+    "startTime": "2023-12-28T15:14:02.875Z",
+    "duration": 11409.674,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
